@@ -1,0 +1,25 @@
+# Local environments and build output
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+# Source repositories, prepared examples, and engine runtime state
+sources/
+artifacts/
+data-docs/
+data-apiref/
+reports/
+.env
+.env.*
+.DS_Store
+
+# Local editor settings and credentials
+.vscode/
+.idea/
+*.pem
+*.key

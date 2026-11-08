@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adcs-words-net-extractor"
+version = "0.1.0"
+requires-python = ">=3.12"
+description = "Aspose.Words for .NET documentation and API extraction plugin"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.scripts]
+adcs-words-net-extract = "adcs_words_net.worker:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

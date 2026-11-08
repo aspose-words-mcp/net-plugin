@@ -1,0 +1,707 @@
+{
+  "schema_version": 1,
+  "profile_id": "aspose.words.net.retrieval",
+  "version": "1.4.1",
+  "product_id": "aspose.words",
+  "language": "net",
+  "rules": [
+    {
+      "rule_id": "classic-mail-merge",
+      "all_terms": [
+        "mail",
+        "merge"
+      ],
+      "exclude_terms": [
+        "region",
+        "regions",
+        "image",
+        "images",
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.MailMerging.MailMerge.Execute"
+      ]
+    },
+    {
+      "rule_id": "classic-mail-merge-regions",
+      "all_terms": [
+        "mail",
+        "merge",
+        "regions"
+      ],
+      "exclude_terms": [
+        "image",
+        "images",
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.MailMerging.MailMerge.ExecuteWithRegions"
+      ]
+    },
+    {
+      "rule_id": "word-to-pdf",
+      "all_terms": [
+        "pdf"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word",
+        "document"
+      ],
+      "any_phrases": [
+        "to pdf",
+        "as pdf"
+      ],
+      "exclude_terms": [],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.PdfSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-to-html",
+      "all_terms": [
+        "document"
+      ],
+      "any_terms": [],
+      "any_phrases": [
+        "to html",
+        "to mhtml",
+        "to epub",
+        "as html",
+        "as mhtml",
+        "as epub"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.HtmlSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-file-to-html",
+      "all_terms": [
+        "to"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "to html",
+        "to mhtml",
+        "to epub"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.HtmlSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-to-excel",
+      "all_terms": [
+        "document"
+      ],
+      "any_terms": [],
+      "any_phrases": [
+        "to excel",
+        "to xlsx",
+        "as excel",
+        "as xlsx"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.XlsxSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-file-to-excel",
+      "all_terms": [
+        "to"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "to excel",
+        "to xlsx"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.XlsxSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-to-markdown",
+      "all_terms": [
+        "document"
+      ],
+      "any_terms": [],
+      "any_phrases": [
+        "to markdown",
+        "as markdown"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.MarkdownSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-file-to-markdown",
+      "all_terms": [
+        "to"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "to markdown"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.MarkdownSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-to-image",
+      "all_terms": [
+        "document"
+      ],
+      "any_terms": [],
+      "any_phrases": [
+        "to image",
+        "to images",
+        "to png",
+        "to jpg",
+        "to jpeg",
+        "to tiff",
+        "as image",
+        "as images",
+        "as png",
+        "as jpg",
+        "as jpeg",
+        "as tiff"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.ImageSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "word-file-to-image",
+      "all_terms": [
+        "to"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "to image",
+        "to images",
+        "to png",
+        "to jpg",
+        "to jpeg",
+        "to tiff"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "from pdf",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.ImageSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "pdf-input",
+      "all_terms": [
+        "pdf"
+      ],
+      "any_terms": [],
+      "any_phrases": [
+        "convert pdf",
+        "convert a pdf",
+        "converting pdf",
+        "load a pdf",
+        "load pdf"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Loading.PdfLoadOptions",
+        "Aspose.Words.Document.Save"
+      ]
+    },
+    {
+      "rule_id": "linq-reporting",
+      "all_terms": [
+        "linq"
+      ],
+      "any_terms": [
+        "report",
+        "reports",
+        "reporting",
+        "template",
+        "templates"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Reporting.ReportingEngine",
+        "Aspose.Words.Reporting.ReportingEngine.BuildReport"
+      ]
+    },
+    {
+      "rule_id": "document-comparison",
+      "all_terms": [
+        "compare"
+      ],
+      "any_terms": [
+        "document",
+        "documents",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail merge",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Compare",
+        "Aspose.Words.Comparing.CompareOptions"
+      ]
+    },
+    {
+      "rule_id": "document-splitting",
+      "all_terms": [
+        "split"
+      ],
+      "any_terms": [
+        "document",
+        "documents",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.ExtractPages",
+        "Aspose.Words.Document.Clone"
+      ]
+    },
+    {
+      "rule_id": "document-merging",
+      "all_terms": [
+        "documents"
+      ],
+      "any_terms": [
+        "merge",
+        "combine",
+        "append",
+        "insert"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.AppendDocument",
+        "Aspose.Words.DocumentBuilder.InsertDocument"
+      ]
+    },
+    {
+      "rule_id": "find-replace",
+      "all_terms": [
+        "replace"
+      ],
+      "any_terms": [
+        "text",
+        "string",
+        "word",
+        "document",
+        "docx"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "image",
+        "images"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Range.Replace",
+        "Aspose.Words.Replacing.FindReplaceOptions"
+      ]
+    },
+    {
+      "rule_id": "digital-signatures",
+      "all_terms": [
+        "signatures"
+      ],
+      "any_terms": [
+        "digital",
+        "digitally"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.DigitalSignatures.DigitalSignatureUtil"
+      ]
+    },
+    {
+      "rule_id": "watermark",
+      "all_terms": [
+        "watermark"
+      ],
+      "any_terms": [],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Watermark.SetText",
+        "Aspose.Words.Watermark.SetImage",
+        "Aspose.Words.Watermark.Remove"
+      ]
+    },
+    {
+      "rule_id": "ai-features",
+      "all_terms": [
+        "ai"
+      ],
+      "any_terms": [
+        "words",
+        "document",
+        "documents",
+        "models",
+        "features"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.AI.AiModel"
+      ]
+    },
+    {
+      "rule_id": "image-with-article",
+      "all_terms": [
+        "image"
+      ],
+      "any_terms": [
+        "doc",
+        "docx",
+        "word",
+        "document"
+      ],
+      "any_phrases": [
+        "to an image",
+        "as an image"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "pdf"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Save",
+        "Aspose.Words.Saving.ImageSaveOptions"
+      ]
+    },
+    {
+      "rule_id": "structured-data-reporting",
+      "all_terms": [
+        "reports"
+      ],
+      "any_terms": [
+        "json",
+        "xml"
+      ],
+      "any_phrases": [
+        "generate reports",
+        "build reports"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Reporting.ReportingEngine.BuildReport",
+        "Aspose.Words.Reporting.JsonDataSource",
+        "Aspose.Words.Reporting.XmlDataSource"
+      ]
+    },
+    {
+      "rule_id": "personalized-template",
+      "all_terms": [
+        "personalized",
+        "template"
+      ],
+      "any_terms": [
+        "document",
+        "documents"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.MailMerging.MailMerge.Execute"
+      ]
+    },
+    {
+      "rule_id": "document-differences",
+      "all_terms": [
+        "differences"
+      ],
+      "any_terms": [
+        "document",
+        "documents",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "differences between"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.Compare",
+        "Aspose.Words.Comparing.CompareOptions"
+      ]
+    },
+    {
+      "rule_id": "individual-page-extraction",
+      "all_terms": [
+        "page"
+      ],
+      "any_terms": [
+        "document",
+        "docx",
+        "word"
+      ],
+      "any_phrases": [
+        "extract each page",
+        "save each page"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.ExtractPages",
+        "Aspose.Words.Document.Save"
+      ]
+    },
+    {
+      "rule_id": "combine-docx-files",
+      "all_terms": [
+        "docx",
+        "files"
+      ],
+      "any_terms": [
+        "combine",
+        "merge",
+        "append"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.AppendDocument",
+        "Aspose.Words.DocumentBuilder.InsertDocument"
+      ]
+    },
+    {
+      "rule_id": "insert-another-document",
+      "all_terms": [
+        "document"
+      ],
+      "any_terms": [
+        "append",
+        "insert"
+      ],
+      "any_phrases": [
+        "to another",
+        "into another"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "mail",
+        "linq"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Document.AppendDocument",
+        "Aspose.Words.DocumentBuilder.InsertDocument"
+      ]
+    },
+    {
+      "rule_id": "text-replacement",
+      "all_terms": [
+        "replacement"
+      ],
+      "any_terms": [
+        "text",
+        "string"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "image",
+        "images"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.Range.Replace",
+        "Aspose.Words.Replacing.FindReplaceOptions"
+      ]
+    },
+    {
+      "rule_id": "digital-signing-variants",
+      "all_terms": [
+        "digitally"
+      ],
+      "any_terms": [
+        "sign",
+        "signed"
+      ],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "image",
+        "images"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.DigitalSignatures.DigitalSignatureUtil"
+      ]
+    },
+    {
+      "rule_id": "digital-signature-singular",
+      "all_terms": [
+        "digital",
+        "signature"
+      ],
+      "any_terms": [],
+      "any_phrases": [],
+      "exclude_terms": [
+        "lowcode",
+        "low code",
+        "image",
+        "images"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.DigitalSignatures.DigitalSignatureUtil"
+      ]
+    },
+    {
+      "rule_id": "large-language-model",
+      "all_terms": [
+        "model"
+      ],
+      "any_terms": [
+        "word",
+        "document",
+        "documents"
+      ],
+      "any_phrases": [
+        "large language model"
+      ],
+      "exclude_terms": [
+        "lowcode",
+        "low code"
+      ],
+      "preferred_symbols": [
+        "Aspose.Words.AI.AiModel"
+      ]
+    }
+  ],
+  "excluded_namespaces": [
+    "Aspose.Words.Lowcode"
+  ]
+}

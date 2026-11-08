@@ -1,0 +1,19 @@
+{
+  "contract": "adcs.extraction.v1",
+  "plugin_id": "aspose.words.net",
+  "product_id": "aspose.words",
+  "language": "net",
+  "operation": "extract",
+  "source_kind": "apiref",
+  "repo_id": "aspose.words.net.apiref",
+  "product_family": "aspose",
+  "source_path": "sources/api-reference/english/net/aspose.words/document/_index.md",
+  "relative_repo_path": "english/net/aspose.words/document/_index.md",
+  "source_prefix": "english/net",
+  "layout_detection": {
+    "layout_type": "doc_locale/programming_language/namespace"
+  },
+  "source_revision": "inline-example",
+  "canonical_base_url": "https://reference.aspose.com/words/net",
+  "raw_markdown": "---\ntitle: Document Class\nlinktitle: Document\narticleTitle: Document\nsecond_title: Aspose.Words for .NET\ndescription: Discover the Aspose.Words.Document class for seamless Word document manipulation. Enhance your projects with powerful features and easy integration.\ntype: docs\nweight: 660\nurl: /net/aspose.words/document/\n---\n## Document class\n\nRepresents a Word document.\n\nTo learn more, visit the [Working with Document](https://docs.aspose.com/words/net/working-with-document/) documentation article.\n\n```csharp\npublic class Document : DocumentBase\n```\n\n## Examples\n\nShows how to execute a mail merge with data from a DataTable.\n\n```csharp\nDataTable table = new DataTable(\"Test\");\ntable.Columns.Add(\"CustomerName\");\ntable.Columns.Add(\"Address\");\ntable.Rows.Add(new object[] { \"Thomas Hardy\", \"120 Hanover Sq., London\" });\ntable.Rows.Add(new object[] { \"Paolo Accorti\", \"Via Monte Bianco 34, Torino\" });\n\n// Below are two ways of using a DataTable as the data source for a mail merge.\n// 1 -  Use the entire table for the mail merge to create one output mail merge document for every row in the table:\nDocument doc = CreateSourceDocExecuteDataTable();\n\ndoc.MailMerge.Execute(table);\n\ndoc.Save(ArtifactsDir + \"MailMerge.ExecuteDataTable.WholeTable.docx\");\n\n// 2 -  Use one row of the table to create one output mail merge document:\ndoc = CreateSourceDocExecuteDataTable();\n\ndoc.MailMerge.Execute(table.Rows[1]);\n\ndoc.Save(ArtifactsDir + \"MailMerge.ExecuteDataTable.OneRow.docx\");\n```\n\nShows how to execute a mail merge with data from a DataTable (CreateSourceDocExecuteDataTable).\n\n```csharp\n/// <summary>\n/// Creates a mail merge source document.\n/// </summary>\nprivate static Document CreateSourceDocExecuteDataTable()\n{\n    Document doc = new Document();\n    DocumentBuilder builder = new DocumentBuilder(doc);\n\n    builder.InsertField(\" MERGEFIELD CustomerName \");\n    builder.InsertParagraph();\n    builder.InsertField(\" MERGEFIELD Address \");\n\n    return doc;\n}\n```\n\n### See Also\n\n* class\u00a0[DocumentBase](../documentbase/)\n* namespace\u00a0[Aspose.Words](../../aspose.words/)\n* assembly\u00a0[Aspose.Words](../../)\n"
+}
