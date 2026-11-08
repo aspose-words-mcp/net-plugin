@@ -1,7 +1,7 @@
 # Context engine integration
 
 [aspose-core-mcp/context-engine](https://github.com/aspose-core-mcp/context-engine)
-**TODO: WORDS_NET_MCP_PUBLIC_REPOSITORY_URL**
+[aspose-words-mcp/net-server](https://github.com/aspose-words-mcp/net-server)
 
 Install and configure the context engine using its [public deployment guide](https://github.com/aspose-core-mcp/context-engine/blob/main/DEPLOYMENT.md). The extractor itself has no runtime engine dependency, but ingestion orchestration and serving require a compatible engine implementing `adcs.extraction.v1` and the retrieval profile schema.
 
@@ -34,4 +34,4 @@ Extractor changes require re-extraction and publication of affected data. A serv
 
 ## MCP and clients
 
-The MCP server exposes the engine's retrieval capabilities. This repository does not launch that server, provision its stores, or configure authentication. Use the MCP repository's deployment guide and then configure the Copilot client with its published endpoint.
+The MCP server exposes the engine's retrieval capabilities. This repository does not launch that server, provision its stores, or configure authentication. Use the [server setup guide](https://github.com/aspose-words-mcp/net-server/blob/main/docs/setup.md), then configure the [Copilot client](https://github.com/aspose-words-mcp/net-copilot-client-agent) with your deployed endpoint. The server composition already supplies a registration catalog and ingestion wrapper; use its `engine/` workspace layout rather than the standalone plugin-root layout described above.

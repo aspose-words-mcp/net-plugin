@@ -12,8 +12,8 @@ Publication organization: [aspose-words-mcp](https://github.com/aspose-words-mcp
 | --- | --- | --- |
 | net-plugin | Extraction and retrieval configuration (this repository) | [aspose-words-mcp/net-plugin](https://github.com/aspose-words-mcp/net-plugin) |
 | aspose-context-engine-core | Ingestion, indexing, storage, and retrieval integration | [aspose-core-mcp/context-engine](https://github.com/aspose-core-mcp/context-engine) |
-| Aspose.Words for .NET MCP server | Exposes retrieval and API tools to clients | **TODO: WORDS_NET_MCP_PUBLIC_REPOSITORY_URL** |
-| net-copilot-client-agent | GitHub Copilot client configuration and custom agent | **TODO: COPILOT_CLIENT_PUBLIC_REPOSITORY_URL** |
+| Aspose.Words for .NET MCP server | Exposes retrieval and API tools to clients | [aspose-words-mcp/net-server](https://github.com/aspose-words-mcp/net-server) |
+| net-copilot-client-agent | GitHub Copilot client configuration and custom agent | [aspose-words-mcp/net-copilot-client-agent](https://github.com/aspose-words-mcp/net-copilot-client-agent) |
 
 The plugin is a one-request extraction worker, not an HTTP service or an MCP client. Engine integration and serving are configured separately.
 
