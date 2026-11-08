@@ -6,14 +6,14 @@ This Python package discovers Markdown sources, extracts documentation and C# ex
 
 ## Project family
 
-Publication organization: [aspose-words-mcp](https://github.com/aspose-words-mcp).
+These repositories work together to provide documentation-backed MCP services and a GitHub Copilot client for Aspose.Words for .NET. The shared engine is maintained under **aspose-core-mcp**; the Words/.NET components are maintained under **aspose-words-mcp**.
 
-| Project | Role | Public repository |
-| --- | --- | --- |
-| net-plugin | Extraction and retrieval configuration (this repository) | [aspose-words-mcp/net-plugin](https://github.com/aspose-words-mcp/net-plugin) |
-| aspose-context-engine-core | Ingestion, indexing, storage, and retrieval integration | [aspose-core-mcp/context-engine](https://github.com/aspose-core-mcp/context-engine) |
-| Aspose.Words for .NET MCP server | Exposes retrieval and API tools to clients | [aspose-words-mcp/net-server](https://github.com/aspose-words-mcp/net-server) |
-| net-copilot-client-agent | GitHub Copilot client configuration and custom agent | [aspose-words-mcp/net-copilot-client-agent](https://github.com/aspose-words-mcp/net-copilot-client-agent) |
+| Repository | Responsibility |
+| --- | --- |
+| [context-engine](https://github.com/aspose-core-mcp/context-engine) | Shared documentation ingestion, indexing, retrieval, and MCP infrastructure |
+| [net-plugin](https://github.com/aspose-words-mcp/net-plugin) **(this repository)** | Aspose.Words for .NET documentation/API extraction and retrieval configuration |
+| [net-server](https://github.com/aspose-words-mcp/net-server) | Deployment helpers that combine pinned engine and plugin versions |
+| [net-copilot-client-agent](https://github.com/aspose-words-mcp/net-copilot-client-agent) | GitHub Copilot agent, C# compilation checks, and example-answer showcase |
 
 The plugin is a one-request extraction worker, not an HTTP service or an MCP client. Engine integration and serving are configured separately.
 
