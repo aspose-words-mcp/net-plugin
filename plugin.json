@@ -19,7 +19,7 @@
         "layout_type": "doc_locale/programming_language/content"
       },
       "canonical_base_url": "https://docs.aspose.com/words/net",
-      "url": "https://github.com/sabir-aspose/words-docs-com.git",
+      "url": "https://github.com/aspose-words-mcp/docs.git",
       "branch": "master"
     },
     "apiref": {
@@ -30,7 +30,7 @@
         "layout_type": "doc_locale/programming_language/namespace"
       },
       "canonical_base_url": "https://reference.aspose.com/words/net",
-      "url": "https://github.com/aspose-words/Aspose.Words-API-References.git",
+      "url": "https://github.com/aspose-words-mcp/reference.git",
       "branch": "main"
     }
   },

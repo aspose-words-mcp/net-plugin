@@ -6,13 +6,22 @@ Run from this repository root:
 
 ```sh
 mkdir -p sources
-git clone --filter=blob:none --sparse --branch master https://github.com/sabir-aspose/words-docs-com.git sources/documentation-current
+git clone --filter=blob:none --sparse --branch master https://github.com/aspose-words-mcp/docs.git sources/documentation-current
 git -C sources/documentation-current sparse-checkout set en/net
-git clone --filter=blob:none --sparse --branch main https://github.com/aspose-words/Aspose.Words-API-References.git sources/api-reference
+git clone --filter=blob:none --sparse --branch main https://github.com/aspose-words-mcp/reference.git sources/api-reference
 git -C sources/api-reference sparse-checkout set english/net
 ```
 
-These are the source repositories configured by the existing plugin, including the documentation fork. They are distinct from the unpublished context-engine and MCP repositories. If a replacement documentation repository is chosen for publication, update its URL, branch, and prefix together in `plugin.json` and this guide, and validate the new layout before ingestion.
+These public repositories provide the documentation and API reference source content for this plugin. Documentation uses the `master` branch and `en/net` prefix; API reference uses `main` and `english/net`. Citations continue to point to the published pages on `docs.aspose.com` and `reference.aspose.com`.
+
+For existing source checkouts, update their remotes before the next source synchronization:
+
+```sh
+git -C sources/documentation-current remote set-url origin https://github.com/aspose-words-mcp/docs.git
+git -C sources/api-reference remote set-url origin https://github.com/aspose-words-mcp/reference.git
+```
+
+Changing the plugin configuration or a Git remote does not refresh an already published index. Synchronize the sources, prepare the Gist cache, and run the normal ingestion and publication workflow to update indexed content. Preserve any local source changes before synchronization.
 
 Expected layout:
 
